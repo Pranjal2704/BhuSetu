@@ -1,0 +1,25 @@
+# Dependency directories
+node_modules/
+
+# Compiled outputs
+dist/
+dist-ssr/
+*.local
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Databases and locks
+bhupramaan_test.db
+bhupramaan.db
+*.db-journal
+*.db-shm
+*.db-wal
+
+# Editor / OS files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

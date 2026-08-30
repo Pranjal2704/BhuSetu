@@ -1,0 +1,9 @@
+node_modules/
+.DS_Store
+Thumbs.db
+backend/bhupramaan.db
+backend/bhupramaan_test.db
+dist/
+build/
+.vscode/
+.idea/
