@@ -10,7 +10,7 @@ export async function getDb(): Promise<Database> {
   }
 
   // Database stored in backend root directory
-  const dbFile = process.env.NODE_ENV === 'test' ? 'bhupramaan_test.db' : 'bhupramaan.db';
+  const dbFile = process.env.NODE_ENV === 'test' ? 'bhusetu_test.db' : 'bhusetu.db';
   const dbPath = path.join(__dirname, '../../', dbFile);
   
   dbInstance = await open({

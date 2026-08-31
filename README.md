@@ -1,4 +1,4 @@
-# BhuPramaan — Ownership-State Verification Engine
+# BhuSetu — Ownership-State Verification Engine
 
 **Project ID:** SIH26018  
 **Ministry/Organization:** Ministry of Rural Development  
@@ -6,9 +6,9 @@
 
 ---
 
-BhuPramaan is a decision-support system designed to reconstruct the chronological ownership state of land parcels from historical records and verify if a new proposed transaction is consistent with that history before it is committed.
+BhuSetu is a decision-support system designed to reconstruct the chronological ownership state of land parcels from historical records and verify if a new proposed transaction is consistent with that history before it is committed.
 
-Rather than validating documents in isolation, BhuPramaan evaluates transaction consistency against the dynamically calculated ownership state established by all preceding records (RoR, Mutation Deeds, Sale Deeds).
+Rather than validating documents in isolation, BhuSetu evaluates transaction consistency against the dynamically calculated ownership state established by all preceding records (RoR, Mutation Deeds, Sale Deeds).
 
 ---
 
@@ -36,7 +36,7 @@ npm start
 *(This starts the Express API server on port `5001` and the Vite/React console on port `3000` simultaneously in a single terminal window).*
 
 Once started, open:
-* **BhuPramaan Console:** [http://localhost:3000](http://localhost:3000)
+* **BhuSetu Console:** [http://localhost:3000](http://localhost:3000)
 * **Backend API Health:** [http://localhost:5001/health](http://localhost:5001/health)
 
 ---

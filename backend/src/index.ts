@@ -20,12 +20,12 @@ app.use('/api', apiRouter);
 
 // Basic health check route
 app.get('/health', (req, res) => {
-  res.json({ status: 'UP', service: 'BhuPramaan Ownership-State Verification Engine' });
+  res.json({ status: 'UP', service: 'BhuSetu Ownership-State Verification Engine' });
 });
 
 async function startServer() {
   try {
-    const dbPath = path.join(__dirname, '../bhupramaan.db');
+    const dbPath = path.join(__dirname, '../bhusetu.db');
     const dbExists = fs.existsSync(dbPath);
 
     // Get database connection
@@ -42,12 +42,12 @@ async function startServer() {
 
     app.listen(PORT, () => {
       console.log(`================================================================`);
-      console.log(` BhuPramaan Monolith Server running at http://localhost:${PORT}`);
+      console.log(` BhuSetu Monolith Server running at http://localhost:${PORT}`);
       console.log(` Environment: Prototype / Hackathon Demo`);
       console.log(`================================================================`);
     });
   } catch (error) {
-    console.error("Failed to start BhuPramaan server:", error);
+    console.error("Failed to start BhuSetu server:", error);
     process.exit(1);
   }
 }

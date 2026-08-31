@@ -22,6 +22,7 @@ import {
   Database
 } from 'lucide-react';
 import { ParcelMap } from './components/ParcelMap';
+import { ChatbotWidget } from './components/ChatbotWidget';
 
 // Config
 const API_BASE = ''; 
@@ -109,7 +110,7 @@ export default function App() {
         <div className="max-w-md w-full space-y-8 bg-slate-900 p-8 rounded-xl border border-slate-800 shadow-2xl relative z-10">
           <div className="text-center">
             <span className="inline-block text-4xl mb-2">📜</span>
-            <h2 className="text-3xl font-extrabold text-white tracking-tight">BhuPramaan</h2>
+            <h2 className="text-3xl font-extrabold text-white tracking-tight">BhuSetu</h2>
             <p className="mt-2 text-sm text-slate-400 font-medium">
               Land Ownership-State Verification Engine
             </p>
@@ -200,7 +201,7 @@ export default function App() {
         <div className="px-6 py-5 border-b border-slate-800 flex items-center gap-2">
           <span className="text-2xl">📜</span>
           <div>
-            <h1 className="font-bold text-white text-lg tracking-tight leading-none">BhuPramaan</h1>
+            <h1 className="font-bold text-white text-lg tracking-tight leading-none">BhuSetu</h1>
             <span className="text-[10px] text-slate-400 font-medium uppercase tracking-wider block mt-1">
               State-Verification
             </span>
@@ -290,7 +291,7 @@ export default function App() {
           <div className="text-xs text-slate-500 font-medium flex items-center gap-2">
             <span>Server status:</span>
             <span className="inline-block w-2 h-2 rounded-full bg-emerald-500"></span>
-            <span className="font-semibold text-slate-700">BhuPramaan Monolith API 1.0</span>
+            <span className="font-semibold text-slate-700">BhuSetu Monolith API 1.0</span>
           </div>
           
           <div className="flex items-center gap-3 text-xs bg-slate-100 px-3 py-1 rounded border border-slate-200">
@@ -339,6 +340,7 @@ export default function App() {
           )}
         </div>
       </main>
+      <ChatbotWidget token={token} />
     </div>
   );
 }
@@ -519,7 +521,7 @@ function DashboardScreen({ token, onNavigate, refreshTrigger }: any) {
               <h3 className="font-bold text-sm uppercase tracking-wider">Demo Guidelines</h3>
             </div>
             <p className="text-xs text-slate-400 leading-relaxed">
-              Use this sandbox interface to test BhuPramaan's core features:
+              Use this sandbox interface to test BhuSetu's core features:
             </p>
             <ol className="text-xs text-slate-400 space-y-2 list-decimal pl-4">
               <li>Go to <strong className="text-slate-300">Document Upload</strong>.</li>

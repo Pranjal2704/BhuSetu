@@ -12,8 +12,8 @@ dist-ssr/
 .env.*.local
 
 # Databases and locks
-bhupramaan_test.db
-bhupramaan.db
+bhusetu_test.db
+bhusetu.db
 *.db-journal
 *.db-shm
 *.db-wal

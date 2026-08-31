@@ -3,7 +3,7 @@ import bcryptjs from 'bcryptjs';
 import jwt from 'jsonwebtoken';
 import { getDb } from '../config/db';
 
-const JWT_SECRET = process.env.JWT_SECRET || 'bhupramaan_secret_key_for_hackathon_2026';
+const JWT_SECRET = process.env.JWT_SECRET || 'bhusetu_secret_key_for_hackathon_2026';
 
 export async function login(req: Request, res: Response) {
   try {

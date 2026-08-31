@@ -1,7 +1,7 @@
 {
-  "name": "bhupramaan-backend",
+  "name": "bhusetu-backend",
   "version": "1.0.0",
-  "description": "BhuPramaan Ownership-State Verification Engine Backend",
+  "description": "BhuSetu Ownership-State Verification Engine Backend",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",

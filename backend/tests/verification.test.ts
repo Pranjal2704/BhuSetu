@@ -10,12 +10,12 @@ import * as turf from '@turf/turf';
 // Set test environment
 process.env.NODE_ENV = 'test';
 
-describe('BhuPramaan Verification Engine Tests', () => {
+describe('BhuSetu Verification Engine Tests', () => {
   let db: any;
 
   beforeAll(async () => {
     // Delete test database if it exists
-    const testDbPath = path.join(__dirname, '../bhupramaan_test.db');
+    const testDbPath = path.join(__dirname, '../bhusetu_test.db');
     if (fs.existsSync(testDbPath)) {
       try {
         fs.unlinkSync(testDbPath);
