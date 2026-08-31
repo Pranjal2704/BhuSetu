@@ -41,21 +41,17 @@ This document provides a comprehensive summary of our development session, traci
   * **Audit Log:** Visual hash log panel showing the blocks and the "Simulate Tamper" trigger.
 * **GIS Leaflet Map (`ParcelMap.tsx`):** Integrated a Leaflet map container to draw GeoJSON parcel boundaries, highlighting discrepancies in **red** (mismatch) or **green** (matched).
 
-### 5. Sahayak Chatbot Integration
-* **API Handler (`chatController.ts`):** Created a `/api/chat` router. It detects plot lookups (regex `\b([0-9]+\/[0-9]+|[0-9]+)\b`), queries the database in real-time, and responds with ownership, area, and dispute details in plain English.
-* **Floating Chat Bubble (`ChatbotWidget.tsx`):** Implemented an expandable chat bubble at the bottom-right of the frontend with quick-action chips for easy user interaction.
-
-### 6. Code Refactoring & Project Rename
+### 5. Code Refactoring & Project Rename
 * **Rename:** Successfully replaced all references of `BhuPramaan` with `BhuSetu` (and lowercase/uppercase equivalents) across all backend files, routes, frontend pages, stylesheets, configuration files, and databases.
 * **DB Filenames:** Renamed local databases to `bhusetu.db` and `bhusetu_test.db`.
 
-### 7. Monorepo & Setup Scripts
+### 6. Monorepo & Setup Scripts
 * **Root Workspace:** Created a root-level `package.json` with workspace commands:
   * `npm run setup` ➔ Installs dependencies across root, backend, and frontend.
   * `npm start` ➔ Starts both the backend API and frontend Vite servers concurrently in a single terminal.
 * **Git Configurations:** Configured root and folder-level `.gitignore` files to keep the repository clean.
 
-### 8. Cloud Deployment
+### 7. Cloud Deployment
 * **GitHub Sync:** Pushed the entire workable codebase to the GitHub repository: `Pranjal2704/BhuSetu`.
 * **Backend Hosting (Render):** Configured the database to read `DATABASE_PATH` env variables and set up a persistent disk volume on Render (mapping to `/data`) so database states are preserved during restarts.
 * **Frontend Hosting (Vercel):** Configured the Vite root directory to `frontend/` on Vercel and linked it to the backend using the `VITE_API_URL` environment variable.
