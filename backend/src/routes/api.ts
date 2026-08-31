@@ -5,7 +5,6 @@ import * as authController from '../controllers/authController';
 import * as parcelController from '../controllers/parcelController';
 import * as transactionController from '../controllers/transactionController';
 import * as auditController from '../controllers/auditController';
-import { chatHandler } from '../controllers/chatController';
 
 const JWT_SECRET = process.env.JWT_SECRET || 'bhusetu_secret_key_for_hackathon_2026';
 const router = Router();
@@ -45,7 +44,6 @@ export function requireRole(allowedRoles: Role[]) {
 // ==========================================
 router.post('/auth/login', authController.login);
 router.get('/auth/me', authMiddleware, authController.getCurrentUser);
-router.post('/chat', authMiddleware, chatHandler);
 
 // ==========================================
 // LAND PARCEL ROUTES

@@ -22,7 +22,6 @@ import {
   Database
 } from 'lucide-react';
 import { ParcelMap } from './components/ParcelMap';
-import { ChatbotWidget } from './components/ChatbotWidget';
 
 // Config
 const API_BASE = ''; 
@@ -340,7 +339,6 @@ export default function App() {
           )}
         </div>
       </main>
-      <ChatbotWidget token={token} />
     </div>
   );
 }
