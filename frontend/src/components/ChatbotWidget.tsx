@@ -46,7 +46,8 @@ export function ChatbotWidget({ token }: ChatbotWidgetProps) {
     setLoading(true);
 
     try {
-      const res = await fetch('/api/chat', {
+      const API_BASE = import.meta.env.VITE_API_URL || '';
+      const res = await fetch(`${API_BASE}/api/chat`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
